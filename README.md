@@ -9,7 +9,7 @@ Currently supports 4 graph algorithms:
 
 still under progress, and more to be added
 
-Try it out [here](https:).
+Try it out [here](https://pathfinder-plum-tau.vercel.app/).
 
 ## Stack
 - React
