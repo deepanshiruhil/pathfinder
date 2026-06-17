@@ -1,20 +1,43 @@
-# Graph Pathfinder
-A cool (little) graph pathfinder built with React!
+# Pathfinder
 
-Currently supports 4 graph algorithms: 
-- Breadth First Search (BFS)
-- Depth First Search (DFS)
-- Dijkstra's Algorithm
-- A* Search
+An interactive visualizer for graph search algorithms- watch BFS, DFS, Dijkstra's, and A* navigate a live grid in real time.
 
-still under progress, and more to be added
+🗺️ **[Try it live →](https://pathfinderbydeepanshi.vercel.app)**
 
-Try it out [here](https://pathfinder-plum-tau.vercel.app/).
+---
+
+## Algorithms
+
+| Algorithm | Guarantees shortest path | Weighted edges |
+|---|---|---|
+| BFS | ✅ (unweighted) | ❌ |
+| DFS | ❌ | ❌ |
+| Dijkstra's | ✅ | ✅ |
+| A\* | ✅ | ✅ |
+
+A* uses Manhattan distance as the heuristic — optimal for grid movement without diagonals.
+
+## Features
+
+- Draw walls by clicking/dragging on the grid
+- Drag start and end nodes to reposition
+- Visualizes the exploration frontier in real time
+- Shows the final shortest path after search completes
+- Clear board or reset only walls without losing node positions
 
 ## Stack
-- React
-- TypeScript
-- Chakra UI
-- ESLint
-- Vite
-- Github Pages
+
+React, TypeScript- no external visualization libraries. All grid logic and animation written from scratch.
+
+## Running locally
+
+```bash
+git clone https://github.com/deepanshiruhil/pathfinder.git
+cd pathfinder
+npm install
+npm start
+```
+
+---
+
+Built by [Deepanshi Ruhil](https://github.com/deepanshiruhil)
